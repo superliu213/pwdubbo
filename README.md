@@ -44,9 +44,11 @@ $ mvn clean
 
 > 配置请在公共配置模块进行配置，主要需要配置数据库和duboo注册地址（注册中心建议使用zookeeper）
 
-> 通过应用服务器启动pw-service-user用户管理模块，完成生产者注册
+> 通过应用服务器启动pw-service-user用户管理模块，完成提供者注册
+![服务提供者](https://github.com/superliu213/resources/blob/master/images/pwdubbo/%E6%9C%8D%E5%8A%A1%E6%8F%90%E4%BE%9B%E8%80%85.png)
 
 > 通过应用服务器启动用户管理系统，完成消费者注册
+![服务消费者](https://github.com/superliu213/resources/blob/master/images/pwdubbo/%E6%9C%8D%E5%8A%A1%E6%B6%88%E8%B4%B9%E8%80%85.png)
 如果使用eclipse开发，通过tomcat部署应用后，
 手动打开url地址 http://localhost:8080/view/login.html
 用户名admin 密码admin

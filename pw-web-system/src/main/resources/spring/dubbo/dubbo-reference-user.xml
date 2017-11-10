@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+        http://www.springframework.org/schema/beans/spring-beans.xsd  
+        http://code.alibabatech.com/schema/dubbo  
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">       
+
+ 	<!-- 用户服务接口 -->
+    <dubbo:reference interface="com.pw.api.user.service.CodeService" id="codeService" check="false"/>
+    <dubbo:reference interface="com.pw.api.user.service.FunctionService" id="functionService" check="false"/>
+    <dubbo:reference interface="com.pw.api.user.service.GroupService" id="groupService" check="false"/>
+    <dubbo:reference interface="com.pw.api.user.service.LogService" id="logService" check="false" />
+    <dubbo:reference interface="com.pw.api.user.service.RoleService" id="roleService" check="false"/>
+    <dubbo:reference interface="com.pw.api.user.service.UserService" id="userService" check="false"/>
+    <dubbo:reference interface="com.pw.common.core.service.ILogService" id="syncLogService" check="false"/>
+
+
+
+</beans>  
